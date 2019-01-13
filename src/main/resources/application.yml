@@ -1,0 +1,17 @@
+---
+spring:
+  application:
+    name: spring-boot-gradle-kotlin-dsl
+server:
+  port: 8443
+  http:
+    port: 8080
+  http2:
+    enabled: true
+  compression:
+    enabled: true
+  ssl:
+    key-store: classpath:keystore.pfx
+    key-store-password: changeit
+    key-password: changeit
+    enabled-protocols: TLSv1.3
